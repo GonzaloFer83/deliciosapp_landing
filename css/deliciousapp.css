@@ -129,7 +129,41 @@ footer {
   min-height: 20rem;
   display: flex;
   align-items: center;
-  text-align: end;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
 }
 
 @media (min-width: 550px) {
@@ -158,6 +192,13 @@ footer {
   }
   .hero-heading, .download-heading, demo-images-heading, contact-heading{
     font-size: 2.4rem;
+  }
+  .footer-about-us {
+    text-align: start;
+  }
+
+  .footer-more-information {
+    text-align: end;
   }
 }
 
@@ -191,6 +232,13 @@ footer {
   .demo-images {
     padding: 15rem 0 8rem;
   }
+  .footer-about-us {
+    text-align: start;
+  }
+
+  .footer-more-information {
+    text-align: end;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -210,5 +258,12 @@ footer {
   .phone + .phone {
     top: -14rem;
     max-height: 570px;
+  }
+  .footer-about-us {
+    text-align: start;
+  }
+
+  .footer-more-information {
+    text-align: end;
   }
 }
