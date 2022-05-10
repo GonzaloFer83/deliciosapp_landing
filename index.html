@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>DeliciousApp</title>
+    <title>DeliciosApp</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,19 +10,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
-    <link rel="stylesheet" href="css/deliciousapp.css">
+    <link rel="stylesheet" href="css/deliciosapp.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
   </head>
   <body>
-    <div class="section hero">
+
+    <header>
+      <div class="container">
+        <div class="row">
+          <a href="/">
+            <img alt="DeliciosApp logo" src="./images/logo_full.png">
+          </a>
+          <nav class="pull-right">
+            <ul>
+              <li>
+                <a href="#install-section">Descarga</a>
+              </li>
+              <li>
+                <a href="#demo-section">Cómo funciona</a>
+              </li>
+              <li>
+                <a href="#contact-section">Contacto</a>
+              </li>
+              <li>
+                  <a class="button button-primary"
+                    href="https://play.google.com/store/?gl=ES">Instalar App</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero-section" class="section hero">
       <div class="container">
         <div class="row">
           <div class="one-half column">
             <h4 class="hero-heading">
-              <strong>DeliciousApp</strong>, la aplicación más sencilla para tener tus recetas a mano
+              <strong>DeliciosApp</strong>, la aplicación más sencilla para tener tus recetas a mano
             </h4>
-            <a class="button button-primary" href="http://google.com">Instalar App</a>
+            <a class="button button-primary" href="https://play.google.com/store/?gl=ES">Instalar App</a>
           </div>
           <div class="one-half column phones">
             <img class="phone" src="images/phone_mockup.png">
@@ -32,12 +60,12 @@
       </div>
     </div>
     
-    <div class="section features">
+    <div id="features-section" class="section features">
       <div class="container">
         <div class="row">
           <div class="one-third column feature">
-            <h2 class="feature-multiplier">
-              1
+            <h2 class="feature-number">
+              <strong>1</strong>
             </h2>
             <h5 class="feature-heading">
               No olvides tus recetas
@@ -47,8 +75,8 @@
             </p>
           </div>
           <div class="one-third column feature">
-            <h2 class="feature-multiplier">
-              2
+            <h2 class="feature-number">
+              <strong>2</strong>
             </h2>
             <h5 class="feature-heading">
               Comparte tus recetas
@@ -58,8 +86,8 @@
             </p>
           </div>
           <div class="one-third column feature">
-            <h2 class="feature-multiplier">
-              3
+            <h2 class="feature-number">
+              <strong>3</strong>
             </h2>
             <h5 class="feature-heading">
               Crea menús semanales
@@ -72,25 +100,26 @@
       </div>
     </div>
 
-    <div class="section download">
+    <div id="install-section" class="section install">
       <div class="container">
         <div class="row">
           <div class="one-half column">
-            <img class="download-qr" src="images/download_qr.png">
+            <img class="install-qr" src="images/install_qr.png">
           </div>
           <div class="one-half column">
-            <h5 class="download-heading">
-              Y lo mejor... ¡DeliciousApp es gratuita!
+            <a href="#" onclick="javascript:showWorkInProgressAlert()" class="fa fa-android"></a>
+            <h5 class="install-heading">
+              Y lo mejor... ¡DeliciosApp es gratuita!
             </h5>
-            <h5 class="download-description">
-              No dudes más y escanea el código QR con tu móvil para descargar la aplicación Android
+            <h5 class="install-description">
+              No dudes más y escanea el código QR con tu móvil para instalar la app en Android
             </h5>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section demo-images">
+    <div id="demo-section" class="section demo-images">
       <div class="container">
         <h4 class="demo-images-heading">Echa un vistazo</h4>
         <p class="demo-images-description">
@@ -116,7 +145,7 @@
       </div>
     </div>
     
-    <div class="section contact">
+    <div id="contact-section" class="section contact">
       <div class="container">
         <h4 class="contact-heading">
           Formulario de contacto
@@ -167,7 +196,6 @@
                   <a href="https://linkedin.com" target="_blank" class="fa fa-linkedin"></a>
                   <a href="https://youtube.com" target="_blank" class="fa fa-youtube"></a>
                   <a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a>
-                  <!-- <a href="#" onclick="javascript:showWorkInProgressAlert()" class="fa fa-android"></a> -->
                 </div>
               </div>
             </div>
@@ -200,7 +228,7 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./js/deliciousapp.js"></script>
+    <script src="./js/deliciosapp.js"></script>
     <script>
       $(document).ready(function() {registerEvents();});
     </script>
