@@ -33,9 +33,9 @@ header {
   background-color: #333;
 }
 
-header a.button {
-  border-radius: 5px;
-  margin-left: 10px;
+.header-logo {
+  display: inline-block;
+  margin-top: 6px;
 }
 
 nav ul {
