@@ -1,9 +1,26 @@
 function registerEvents() {
+  window.addEventListener("scroll", addAnimationBottomTop);
   $('#contact-form')[0].reset();
   $("#contact-form").submit(function (event) {
     event.preventDefault();
     onContactFormSubmit(event);
   });
+}
+
+function addAnimationBottomTop() {
+  let animatedElements = $(".bottom-top-animation");
+
+  for (let i = 0; i < animatedElements.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = animatedElements[i].getBoundingClientRect().top;
+    let elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      animatedElements[i].classList.add("active");
+    } else {
+      animatedElements[i].classList.remove("active");
+    }
+  }
 }
 
 function onContactFormSubmit(event) {
@@ -62,19 +79,4 @@ function sendEmail(fromEmail, toEmail, subject, body, onSuccess, onError) {
       onError(error);
     }
   });
-}
-
-function showWorkInProgressAlert() {
-  alert('Próximamente...');
-}
-
-function showAboutUsAlert() {
-  alert(
-    'EDIX: Desarrollo de Aplicaciones Multiplataforma\n\n' +
-    'Trabajo final de grado elaborado por:\n' +
-    '\t- Alvaro\n' + 
-    '\t- Adrián\n' +
-    '\t- Gonzalo Ferández Ruiz\n'
-    
-  );
 }

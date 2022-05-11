@@ -1,22 +1,22 @@
 .button {
-  border-radius: 100px;
+  background-color: #A12 !important;
+  border-color: #A12 !important;
 }
-
 .section {
   padding: 5rem 0 5rem;
   text-align: center;
 }
-
+.text-page{
+  margin: 15rem 15rem 10rem 15rem;
+}
 .display-none {
   display: none !important;
 }
-
 .alert {
   display: block;
   padding: 20px;
   border-left: 5px solid;
 }
-
 .alert-success {
   background-color: #D5F5E3;
   border-left-color: #2ECC71;
@@ -28,16 +28,19 @@
   border-left-color: #C0392B;
   color: #C0392B;
 }
-
 header {
   background-color: #333;
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
 .header-logo {
   display: inline-block;
   margin-top: 6px;
 }
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -47,7 +50,6 @@ nav ul {
   position: sticky;
   top: 0;
 }
-
 nav ul li {
   margin-bottom: 0px;
   height: 52px;
@@ -55,7 +57,6 @@ nav ul li {
   justify-content: center;
   align-items: center;
 }
-
 nav ul li a {
   display: block;
   color: white;
@@ -63,12 +64,10 @@ nav ul li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 nav ul li a:hover {
   background-color: #111;
   color: #FFFFFF;
 }
-
 .phones {
   position: relative;
 }
@@ -80,7 +79,6 @@ nav ul li a:hover {
 .phone + .phone {
   display: none;
 }
-
 .features {
   background-image: url('../images/background.jpg');
   background-size: cover;
@@ -89,8 +87,8 @@ nav ul li a:hover {
 }
 .feature-number {
   margin-bottom: .5rem;
-  color: #11DFC7;
-  /* color: #A12; */
+  /* color: #11DFC7;*/
+  color: #A12;
 }
 .feature-heading {
   font-weight: 500;
@@ -100,27 +98,22 @@ nav ul li a:hover {
   opacity: .8;
   font-weight: 300;
 }
-
 .install .row {
   display: flex;
   align-items: center;
 }
-
 .install-heading {
   font-weight: 500;
   margin-bottom: .3rem;
 }
-
 .install-description {
   opacity: .8;
   font-weight: 300;
 }
-
 .contact {
   border-bottom: 1px solid #ddd;
   text-align: center;
 }
-
 .contact-form {
   max-width: 500px;
   margin: auto;
@@ -128,12 +121,10 @@ nav ul li a:hover {
   background: #ffffff;
   text-align: left;
 }
-
 .contact-form input,
 .contact-form textarea {
   width: 100%;
 }
-
 .contact-heading {
   font-weight: 500;
   margin-bottom: 1.2rem;
@@ -141,7 +132,6 @@ nav ul li a:hover {
 .contact-description {
   margin-bottom: 1.2rem;
 }
-
 .demo-images {
   background-image: url('../images/background.jpg');
   background-size: cover;
@@ -158,12 +148,10 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
 }
-
 .arrow-icon {
   width: 40px;
   height: 40px;
 }
-
 footer {
   background-color: #333;
   color: #FFFFFF;
@@ -171,11 +159,10 @@ footer {
   display: flex;
   align-items: center;
 }
-
 footer a {
   cursor: pointer;
+  text-decoration: none;
 }
-
 .fa {
   padding: 10px;
   font-size: 20px;
@@ -185,30 +172,82 @@ footer a {
   margin: 5px 2px;
   border-radius: 50%;
 }
-
 .fa-twitter {
   background: #55ACEE;
   color: white;
 }
-
 .fa-linkedin {
   background: #007bb5;
   color: white;
 }
-
 .fa-youtube {
   background: #bb0000;
   color: white;
 }
-
 .fa-instagram {
   background: #125688;
   color: white;
 }
-
 .fa-android {
   background: #a4c639;
   color: white;
+}
+.bottom-top-animation {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.bottom-top-animation.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.justified {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.faqs-answer {
+  display: none;
+  background: #e5e5e5;
+  width: 100%;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+.faqs-answer p {
+  font-size: 13px;
+  line-height: 17px;
+}
+
+
+#privacy a.active {
+  font-weight: bold;
+}
+
+.faqs-question {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+  padding: 1rem 2rem;
+  line-height: 20px;
+  display: block;
+  border: 1px solid #d0d0d0;
+  width: 100%;
+  margin-bottom: -1px;
+}
+
+.fa-plus {
+  color: #5ec4cd;
+  font-size: 10px;
+}
+
+.fa-minus {
+  color: #5ec4cd;
+  font-size: 10px;
+}
+
+.team-member {
+  max-width: 200px;
 }
 
 @media (min-width: 550px) {
@@ -243,6 +282,9 @@ footer a {
   }
   .footer-more-information {
     text-align: end;
+  }
+  .team-member {
+    max-width: 250px;
   }
 }
 
@@ -282,6 +324,9 @@ footer a {
   .footer-more-information {
     text-align: end;
   }
+  .team-member {
+    max-width: 300px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -307,5 +352,8 @@ footer a {
   }
   .footer-more-information {
     text-align: end;
+  }
+  .team-member {
+    max-width: 400px;
   }
 }

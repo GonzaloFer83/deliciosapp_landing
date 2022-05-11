@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>DeliciosApp</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="DeliciosApp web">
+    <meta name="author" content="AGA company">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,36 +12,10 @@
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/deliciosapp.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
-
   </head>
   <body>
 
-    <header>
-      <div class="container">
-        <div class="row">
-          <a href="/">
-            <img class="header-logo" alt="DeliciosApp logo" src="./images/logo_full.png">
-          </a>
-          <nav class="pull-right">
-            <ul>
-              <li>
-                <a href="#install-section">Descarga</a>
-              </li>
-              <li>
-                <a href="#demo-section">Cómo funciona</a>
-              </li>
-              <li>
-                <a href="#contact-section">Contacto</a>
-              </li>
-              <li>
-                  <a class="button button-primary"
-                    href="https://play.google.com/store/?gl=ES">Instalar App</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <div id="header-section"></div>
 
     <div id="hero-section" class="section hero">
       <div class="container">
@@ -63,7 +37,7 @@
     <div id="features-section" class="section features">
       <div class="container">
         <div class="row">
-          <div class="one-third column feature">
+          <div class="one-third column feature bottom-top-animation">
             <h2 class="feature-number">
               <strong>1</strong>
             </h2>
@@ -74,7 +48,7 @@
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
           </div>
-          <div class="one-third column feature">
+          <div class="one-third column feature bottom-top-animation">
             <h2 class="feature-number">
               <strong>2</strong>
             </h2>
@@ -85,7 +59,7 @@
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
           </div>
-          <div class="one-third column feature">
+          <div class="one-third column feature bottom-top-animation">
             <h2 class="feature-number">
               <strong>3</strong>
             </h2>
@@ -103,7 +77,7 @@
     <div id="install-section" class="section install">
       <div class="container">
         <div class="row">
-          <div class="one-half column">
+          <div class="one-half column bottom-top-animation">
             <img class="install-qr" src="images/install_qr.png">
           </div>
           <div class="one-half column">
@@ -174,63 +148,13 @@
       </div>
     </div>
 
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="one-half column">
-            <div class="container footer-about-us">
-              <div class="row">
-                <div class="twelve columns">
-                  <h6><strong>AGA Company</strong></h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="twelve columns">
-                  <a onclick="javascript:showAboutUsAlert()">Sobre nosotros</a>
-                </div>
-                <div class="twelve columns">
-                  <p>C/Rey de las Eras, nº10, oficina 9, 13005, España</p>
-                </div>
-                <div class="twelve columns">
-                  <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
-                  <a href="https://linkedin.com" target="_blank" class="fa fa-linkedin"></a>
-                  <a href="https://youtube.com" target="_blank" class="fa fa-youtube"></a>
-                  <a href="https://instagram.com" target="_blank" class="fa fa-instagram"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="one-half column">
-            <div class="container footer-more-information">
-              <div class="row">
-                <div class="twelve columns">
-                  <h6><strong>Información adicional</strong></h6>
-                </div>
-              </div>
-              <div class="row">
-                <div class="twelve columns">
-                  <a onclick="javascript:showWorkInProgressAlert()">Preguntas frecuentes</a>
-                </div>
-                <div class="twelve columns">
-                  <a onclick="javascript:showWorkInProgressAlert()">Política de privacidad</a>
-                </div>
-                <div class="twelve columns">
-                  <a onclick="javascript:showWorkInProgressAlert()">Términos de uso</a>
-                </div>
-                <div class="twelve columns">
-                  <a onclick="javascript:showWorkInProgressAlert()">Uso de Cookies</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div id="footer-section"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./js/deliciosapp.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
     <script>
-      $(document).ready(function() {registerEvents();});
+      $(document).ready(function() {registerEvents(); loadHtml();});
     </script>
 
   </body>
