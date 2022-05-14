@@ -1,1 +1,1 @@
-# DeliciosApp landing
+# DeliciousApp landing

@@ -31,7 +31,7 @@ function onContactFormSubmit(event) {
   let message = event.target.elements.message.value;
 
   let toEmail = 'laura.gutierrez.lopezfranca@gmail.com';
-  let subject = 'DeliciosApp web - Nuevo mensaje a través del formulario de contacto';
+  let subject = 'DeliciousApp web - Nuevo mensaje a través del formulario de contacto';
   let body = (
     '<p>Se muestran a continuación los datos de contacto del formulario:</p>' +
     '<ul><li>Email: ' + fromEmail + '</li>' +
