@@ -145,13 +145,10 @@ nav ul li a:hover {
 .demo-images-description {
   margin-bottom: 4rem;
 }
-.demo-images .row {
-  display: flex;
-  align-items: center;
-}
 .arrow-icon {
   width: 40px;
   height: 40px;
+  transform: rotate(90deg);
 }
 footer {
   background-color: #333;
@@ -163,6 +160,9 @@ footer {
 footer a {
   cursor: pointer;
   text-decoration: none;
+}
+footer h6 {
+  margin-top: 2rem;
 }
 .fa {
   padding: 10px;
@@ -285,6 +285,13 @@ footer a {
   header a.button {
     display: block;
   }
+  .demo-images .row {
+    display: flex;
+    align-items: center;
+  }
+  .arrow-icon {
+    transform: rotate(0deg);
+  }
   .hero {
     padding-bottom: 12rem;
     text-align: left;
@@ -319,6 +326,9 @@ footer a {
   }
   .text-align-center {
     text-align: center;
+  }
+  footer h6 {
+    margin-top: 1rem;
   }
 }
 
