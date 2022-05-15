@@ -61,7 +61,7 @@ A minimal landing page to describe the features and characteristics of the appli
 
 ### Deployed With
 
-This webpage has been deployed using [Heroku](https://id.heroku.com/login). The deployed version can be found [here](http://its-delicious-app.herokuapp.com/).
+This webpage has been deployed using [Heroku](https://id.heroku.com/login) and the [buildpack heroku-buildpack-static](https://github.com/heroku/heroku-buildpack-static). The deployed version can be found [here](http://its-delicious-app.herokuapp.com/).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
