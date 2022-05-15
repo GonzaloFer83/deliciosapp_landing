@@ -6,9 +6,6 @@
   padding: 5rem 0 5rem;
   text-align: center;
 }
-.text-page{
-  margin: 15rem 15rem 10rem 15rem;
-}
 .display-none {
   display: none !important;
 }
@@ -40,12 +37,15 @@ header a.button {
   width: 100%;
   z-index: 1000;
 }
+.hero, .about-us, .privacy, .terms, .faqs, .cookies {
+  margin-top: 8rem;
+}
 .header-logo {
   display: inline-block;
   font-family: 'Street Explorer', sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   color: #ffffff;
-  margin-top: 6px;
+  margin-top: 16px;
   margin-bottom: 0 !important;
   cursor: pointer;
 }
@@ -75,6 +75,16 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #111;
   color: #FFFFFF;
+}
+.nav-menu-link {
+  display: none;
+}
+.nav-menu-link-vertical {
+  display: block;
+  text-align: center;
+}
+.nav-hamburguer {
+  cursor: pointer;
 }
 .hero a.button {
   margin-top: 2rem;
@@ -156,6 +166,7 @@ footer {
   min-height: 20rem;
   display: flex;
   align-items: center;
+  padding-bottom: 2rem;
 }
 footer a {
   cursor: pointer;
@@ -219,6 +230,7 @@ footer h6 {
   font-size: 13px;
   line-height: 17px;
   margin: 20px;
+  text-align: start !important;
 }
 
 #faqs a.active {
@@ -235,6 +247,7 @@ footer h6 {
   border: 1px solid #d0d0d0;
   width: 100%;
   margin-bottom: -1px;
+  text-align: start !important;
 }
 
 .fa-plus {
@@ -252,8 +265,8 @@ footer h6 {
 }
 
 .translation-select {
-  margin-left: 10px;
-  margin-bottom: 0 !important;
+  margin-left: 0;
+  margin-top: 2rem;
   color: #000000;
   height: 30px !important;
   font-size: 13px;
@@ -263,6 +276,7 @@ footer h6 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 .card:hover {
@@ -282,9 +296,6 @@ footer h6 {
   .section {
     padding: 7rem 0 7rem;
   }
-  header a.button {
-    display: block;
-  }
   .demo-images .row {
     display: flex;
     align-items: center;
@@ -292,10 +303,19 @@ footer h6 {
   .arrow-icon {
     transform: rotate(0deg);
   }
+  .header-logo {
+    display: inline-block;
+    font-size: 32px;
+    margin-top: 6px;
+  }
   .hero {
     padding-bottom: 12rem;
     text-align: left;
     height: 165px;
+    margin-top: 6rem;
+  }
+  .about-us, .privacy, .terms, .faqs, .cookies {
+    margin-top: 6rem;
   }
   .hero a.button {
     margin-top: 0;
@@ -306,14 +326,6 @@ footer h6 {
     right: 3rem;
     max-height: 362px;
     z-index: 3;
-  }
-  .phone + .phone {
-    top: -6rem;
-    display: block;
-    max-width: 73.8%;
-    right: 0;
-    z-index: 2;
-    max-height: 338px;
   }
   .hero-heading, .install-heading, demo-images-heading, contact-heading{
     font-size: 2.4rem;
@@ -330,20 +342,37 @@ footer h6 {
   footer h6 {
     margin-top: 1rem;
   }
+  footer {
+    padding-bottom: 1rem;
+  }
+  .card {
+    margin-bottom: 0;
+  }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 875px) {
   .hero {
     height: 190px;
+    margin-top: 0rem;
+    padding: 16rem 0 14rem;
+  }
+  .about-us, .privacy, .terms, .faqs, .cookies {
+    margin-top: 0rem;
   }
   .hero-heading, .install-heading, demo-images-heading, contact-heading{
     font-size: 2.6rem;
   }
+  header a.button {
+    display: block;
+  }
+  .nav-menu-link {
+    display: inline-block;
+  }
+  .nav-hamburguer {
+    display: none;
+  }
   .section {
     padding: 10rem 0 10rem;
-  }
-  .hero {
-    padding: 16rem 0 14rem;
   }
   .section-description {
     max-width: 60%;
@@ -354,10 +383,6 @@ footer h6 {
     top: -14rem;
     right: 5rem;
     max-height: 510px;
-  }
-  .phone + .phone {
-    top: -12rem;
-    max-height: 472px;
   }
   .demo-images {
     padding: 15rem 0 8rem;
@@ -371,6 +396,10 @@ footer h6 {
   .team-member {
     max-width: 300px;
   }
+  .translation-select {
+    margin-left: 10px;
+    margin-bottom: 0 !important;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -379,6 +408,10 @@ footer h6 {
   }
   .hero {
     padding: 22rem 0;
+    margin-top: 0rem;
+  }
+  .about-us, .privacy, .terms, .faqs, .cookies {
+    margin-top: 0rem;
   }
   .hero-heading, .install-heading, demo-images-heading, contact-heading{
     font-size: 3.0rem;
@@ -386,10 +419,6 @@ footer h6 {
   .phone {
     top: -16rem;
     max-height: 615px;
-  }
-  .phone + .phone {
-    top: -14rem;
-    max-height: 570px;
   }
   .text-align-start {
     text-align: start;

@@ -4,17 +4,10 @@ function loadHtml() {
   $('#footer-section').load('footer.html');
 }
 
-function showWorkInProgressAlert() {
-  alert('Próximamente...');
-}
-
-function showAboutUsAlert() {
-  alert(
-    'EDIX: Desarrollo de Aplicaciones Multiplataforma\n\n' +
-    'Trabajo final de grado elaborado por:\n' +
-    '\t- Alvaro\n' + 
-    '\t- Adrián\n' +
-    '\t- Gonzalo Fernández Ruiz\n'
-    
-  );
+function displayNavMenu() {
+  if ($('.nav-menu-link').hasClass('nav-menu-link-vertical')) {
+    $('.nav-menu-link').removeClass('nav-menu-link-vertical');
+  } else {
+    $('.nav-menu-link').addClass('nav-menu-link-vertical');
+  }
 }
