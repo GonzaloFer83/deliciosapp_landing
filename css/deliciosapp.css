@@ -28,7 +28,7 @@
 header {
   background-color: #333;
 }
-header a.button {
+.header-install-button {
   display: none;
 }
 .sticky {
@@ -57,6 +57,8 @@ nav ul {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  right: 0;
+  text-align: center;
 }
 nav ul li {
   margin-bottom: 0px;
@@ -362,8 +364,8 @@ footer h6 {
   .hero-heading, .install-heading, demo-images-heading, contact-heading{
     font-size: 2.6rem;
   }
-  header a.button {
-    display: block;
+  .header-install-button {
+    display: inline-block;
   }
   .nav-menu-link {
     display: inline-block;
