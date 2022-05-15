@@ -28,9 +28,7 @@
         <li><a href="#installation">Integrations</a></li>
       </ul>
     </li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -93,26 +91,11 @@ In order to customize integrations, the following would be required.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-## License
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 ## Contact
 
 Gonzalo Fernández Ruíz - [Linkedin](https://www.linkedin.com/in/gonzalo-fernandez-ruiz/) - [Email](gonzalo.fernandez.ruiz@gmail.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
