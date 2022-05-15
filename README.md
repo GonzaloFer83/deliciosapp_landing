@@ -36,9 +36,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][images/hero_screen.png]](https://its-delicious-app.herokuapp.com)
-
-A minimal landing page to describe the features and characteristics of the applicationm including:
+A minimal landing page to describe the features and characteristics of the application including:
 * Index
   * Header: Logo + Nav + Install button
   * Hero section: Title + image
