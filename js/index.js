@@ -9,10 +9,10 @@ function registerEvents() {
 }
 
 function swapDemoImages() {
-  let lastSrc = $('.demo-images .u-max-full-width')[0].src;
-  $('.demo-images .u-max-full-width')[0].src = $('.demo-images .u-max-full-width')[1].src;
-  $('.demo-images .u-max-full-width')[1].src = $('.demo-images .u-max-full-width')[2].src;
-  $('.demo-images .u-max-full-width')[2].src = lastSrc;
+  let lastSrc = $('.demo-images .u-max-full-width')[2].src;
+  $('.demo-images .u-max-full-width')[2].src = $('.demo-images .u-max-full-width')[1].src;
+  $('.demo-images .u-max-full-width')[1].src = $('.demo-images .u-max-full-width')[0].src;
+  $('.demo-images .u-max-full-width')[0].src = lastSrc;
 }
 
 function addAnimationBottomTop() {
