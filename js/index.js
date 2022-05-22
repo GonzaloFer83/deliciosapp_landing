@@ -53,6 +53,7 @@ function onContactFormSubmit(event) {
       if (response[0] == 0) {
         $('#contact-form-success-message').removeClass('display-none');
         $('#contact-form-error-message').addClass('display-none');
+        $("#contact-form")[0].reset();
       } else {
         $('#contact-form-success-message').addClass('display-none');
         $('#contact-form-error-message').removeClass('display-none');
